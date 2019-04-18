@@ -1,0 +1,135 @@
+/**************
+Color Scheme:
+dark red: #8D0A00;
+blue: #1d7399;
+light olive: #bcc1ac;
+**************/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #bcc1ac;
+}
+
+/*************
+  Background Garden Tips page
+*************/
+
+#background {
+  background-image: url(../images/flowerBackground.jpg);
+  padding: 3em;
+}
+#background2 {
+  border: 2px solid #8D0A00;
+  background-color: #fff;
+  opacity: .8;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/*************
+  Navigation
+*************/
+nav {
+  background-color:  #1d7399;
+  padding: 1em 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2em;
+}
+
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  color: #8D0A00;
+}
+/*******************
+  Headings
+*******************/
+h1 {
+  color: #8D0A00;
+  text-align: center;
+}
+h4 {
+  color: #1d7399;
+  text-align: center;
+}
+
+/*******************
+  Content
+*******************/
+section {
+  padding: 2em;
+}
+p {
+  font-weight: bold;
+  text-align: justify;
+}
+blockquote {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #1d7399;
+}
+/*******************
+  Images
+*******************/
+img#food {
+  float: right;
+}
+
+div#gardenPlot {
+  text-align: center;
+  margin: 1em;
+}
+div#gardenPlot img {
+  border: 2px solid #8D0A00;
+}
+
+/*******************
+  Button
+*******************/
+div#buttonContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  background-color: #49503D;
+  color: white;
+  padding: .7em;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background-color: #8D0A00;
+}
+
+/*******************
+  Forms
+*******************/
+div#buyPlotForm {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+form {
+  border: 2px solid #8D0A00;
+  padding: 2em;
+}
+form input {
+  display: block;
+}
