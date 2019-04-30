@@ -1,0 +1,203 @@
+/**************
+Color Scheme:
+dark red: #8D0A00;
+blue: #1d7399;
+light olive: #bcc1ac;
+**************/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: #BCE784;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*************
+  Nav Bar
+*************/
+.container > li {
+  order: 1;
+  flex: 1;
+}
+@media all and (max-width: 600px) {
+  
+  .container {
+    flex-wrap: wrap;
+  }
+  
+  .container > li {
+    flex-basis: 50%;
+  }
+}
+@media all and (max-width: 400px) {
+  .container > li {
+    flex-basis: 100%;
+  }
+}
+/*************
+  Hero Image 
+*************/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bigstock-Vegetable-garden-in-cloudy-wea-20297780.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex-basis: auto;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  order: 2;
+}
+/*************
+  Index below Hero Image
+*************/
+.containerBelowHero {
+  display: inline-flex;
+  flex-direction: column;
+}
+#homePageSecondHeading {
+  background-color: #465e22;
+  padding: 0.1em;
+  margin-bottom: 1em;
+  order: 1;
+}
+.belowHeroContent {
+  order: 2;
+}
+/*************
+  Background Garden Tips page
+*************/
+#background {
+  background-image: url(../images/flowerBackground.jpg);
+  padding: 3em;
+}
+#background2 {
+  border: 2px solid #8D0A00;
+  background-color: #fff;
+  opacity: .8;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/*************
+  Navigation
+*************/
+nav {
+  padding: 1em 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2em;
+}
+
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  color: #C3F73A;
+}
+/*******************
+  Headings
+*******************/
+h1 {
+  color: White;
+  text-align: center;
+  font-size: 40px;
+}
+h4 {
+  color: #1d7399;
+  text-align: center;
+}
+
+/*******************
+  Content
+*******************/
+section {
+  padding: 2em;
+}
+p {
+  font-weight: bold;
+  text-align: justify;
+}
+blockquote {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #1d7399;
+}
+/*******************
+  Images
+*******************/
+img#food {
+  float: right;
+}
+
+div#gardenPlot {
+  text-align: center;
+  margin: 1em;
+}
+div#gardenPlot img {
+  border: 2px solid #8D0A00;
+}
+
+/*******************
+  Button
+*******************/
+div#buttonContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  background-color: #49503D;
+  color: white;
+  padding: .7em;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background-color: #8D0A00;
+}
+
+/*******************
+  Forms
+*******************/
+div#buyPlotForm {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+form {
+  border: 2px solid #8D0A00;
+  padding: 2em;
+}
+form input {
+  display: block;
+}
+/*******************
+  Links
+*******************/
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
