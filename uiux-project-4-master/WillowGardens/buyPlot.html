@@ -2,79 +2,81 @@
 
 <html>
 <head>
+  <title>Willow Gardnes - Buy a Plot</title>
   <meta charset="utf-8">
-
-  <title>Buy a Plot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interested Wisconsin residents may purchase one of our
+      plots for their gardening needs.">
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
 
-  <nav>
-    <ul>
-      <li><a href=index.html>About</a></li>
-      <li><a href=buyPlot.html>Apply for a plot</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="gardeningTips.html">Gardening Tips</a></li>
-      <li><a href="#">Field Trips and Tours</a></li>
-      <li><a href="#">Volunteer</a></li>
-      <li><a href="#">Workshops and Courses</a></li>
-      <li><a href="#">For the kids</a></li>
-    </ul>
-  </nav>
+  <div class="hero-image">
+    <nav class="homePageNav">
+      <ul class="container"> 
+        <li><a href=index.html>About</a></li>
+        <li><a href=buyPlot.html>Apply for a plot</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="gardeningTips.html">Gardening Tips</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Workshops and Courses</a></li>
+        <li><a href="#">For the kids</a></li>
+      </ul>
+    </nav>
+      <h1>Thank you for your interest in Willow Gardens!</h1>
 
+      <div id="buyPlotForm">
+        <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" required aria-required="true" />
+    
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" required />
+    
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+    
+          <label for="birthday">Birthday:</label>
+          <input type="date" name="birthday" id="birthday"/>
+    
+          <label for="numberOfPlots">Number of plots (4 per gardener limit):</label><br/>
+          <select name="numberOfPlots" id="numberOfPlots" required >
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="04">4</option>
+          </select>
+          <br/>
+          <label>Returning Gardener?:</label>
+          <label for="returningYes">Yes</label>
+          <input type="radio" name="returning" id="returningYes"/>
+          <label for="returningNo">No</label>
+          <input type="radio" name="returning" id="returningNo"/>
+    
+          <input type="submit" />
+    
+        </form>
+      </div>
 
-  <h1>Thank you for your interest in Willow Gardens!</h1>
+      <aside class="plot-assignment-rules">
+      <h3>Plot Assignment Rules</h3>
 
-  <h4>Plot Assignment Rules</h4>
-
-  <ol>
-    <li>Returning gardeners applying for the same number of plots as last year (must be in
-    good standing).</li>
-    <li>New gardeners requesting a plot (assigned in order of applicant's proximity to the
-    Willow Gardens).</li>
-    <li>Returning gardeners requesting one extra plot. After being reassigned the same
-    number of plots you held last year (priority #1), we will consider additional plot requests depending on availability.</li>
-  </ol>
-
-  <div id="buyPlotForm">
-    <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
-      <label for="firstName">First Name:</label>
-      <input type="text" name="firstName" id="firstName" required aria-required="true" />
-
-      <label for="lastName">Last Name:</label>
-      <input type="text" name="lastName" id="lastName" required />
-
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="birthday">Birthday:</label>
-      <input type="date" name="birthday" id="birthday"/>
-
-      <br/><br/>
-
-      <label for="numberOfPlots">Number of plots:</label>
-      <p>Limit of 4 plots per gardener</p>
-      <select name="numberOfPlots" id="numberOfPlots" required >
-        <option value="01">1</option>
-        <option value="02">2</option>
-        <option value="03">3</option>
-        <option value="04">4</option>
-      </select>
-
-      <br/><br/>
-
-      <label>Returning Gardener?:</label>
-      <label for="returningYes">Yes</label>
-      <input type="radio" name="returning" id="returningYes"/>
-      <label for="returningNo">No</label>
-      <input type="radio" name="returning" id="returningNo"/>
-
-      <input type="submit" />
-
-    </form>
-  </div>
+      <ol>
+        <li>Returning gardeners applying for the same number of plots as last year (must be in
+        good standing).</li>
+        <li>New gardeners requesting a plot (assigned in order of applicant's proximity to the
+        Willow Gardens).</li>
+        <li>Returning gardeners requesting one extra plot. After being reassigned the same
+        number of plots you held last year (priority #1), we will consider additional plot requests depending on availability.</li>
+      </ol>
+      </aside>
+    </div>
+    <section id="homePageSecondHeading">
+      <h2>General plot information</h2>
+    </section>
+    <div class="containterBelowHero">
+      <div class="belowHeroContent">
 
   <div id="gardenPlot">
     <img src="images/gardenPlot.jpg"  alt="Image of Garden Plot"/>
